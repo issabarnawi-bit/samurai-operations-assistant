@@ -1,0 +1,260 @@
+body {
+    margin: 0;
+    background: #0f172a;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+}
+
+.page {
+    padding: 24px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 22px;
+}
+
+h1 {
+    margin: 0;
+    color: #2dce89;
+    font-size: 24px;
+}
+
+p {
+    margin: 6px 0 0;
+    color: #94a3b8;
+}
+
+button {
+    border: 1px solid #2dce89;
+    background: rgba(45, 206, 137, 0.14);
+    color: #ffffff;
+    border-radius: 8px;
+    padding: 9px 14px;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.summary-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(160px, 1fr));
+    gap: 14px;
+    margin-bottom: 22px;
+}
+
+.summary-card {
+    background: #111827;
+    border: 1px solid #334155;
+    border-radius: 12px;
+    padding: 16px;
+}
+
+.summary-card span {
+    display: block;
+    color: #94a3b8;
+    font-size: 13px;
+    margin-bottom: 8px;
+}
+
+.summary-card strong {
+    font-size: 30px;
+}
+
+.summary-card.critical strong {
+    color: #ef4444;
+}
+
+.summary-card.warning strong {
+    color: #f59e0b;
+}
+
+.branches-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+    gap: 14px;
+}
+
+.branch-card {
+    background: #111827;
+    border: 1px solid #334155;
+    border-radius: 14px;
+    padding: 16px;
+}
+
+.branch-card.critical {
+    border-color: #ef4444;
+    box-shadow: 0 0 18px rgba(239, 68, 68, 0.35);
+}
+
+.branch-card.warning {
+    border-color: #f59e0b;
+}
+
+.branch-header {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 14px;
+}
+
+.branch-title {
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.branch-time {
+    font-size: 12px;
+    color: #94a3b8;
+}
+
+.branch-stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+    margin-bottom: 12px;
+}
+
+.stat {
+    background: #1f2937;
+    border-radius: 8px;
+    padding: 8px;
+}
+
+.stat span {
+    display: block;
+    font-size: 11px;
+    color: #94a3b8;
+}
+
+.stat strong {
+    font-size: 18px;
+}
+
+.critical-text {
+    color: #ef4444;
+}
+
+.warning-text {
+    color: #f59e0b;
+}
+
+.good-text {
+    color: #2dce89;
+}
+
+.critical-orders {
+    border-top: 1px solid #334155;
+    padding-top: 10px;
+    margin-top: 10px;
+}
+
+.critical-order {
+    font-size: 12px;
+    color: #e5e7eb;
+    padding: 6px 0;
+    border-bottom: 1px solid rgba(255,255,255,.08);
+}
+
+.empty {
+    color: #94a3b8;
+    padding: 30px;
+    text-align: center;
+    border: 1px dashed #334155;
+    border-radius: 14px;
+}
+.header-actions {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.global-alert {
+    background: rgba(127, 29, 29, 0.95);
+    border: 2px solid #ef4444;
+    color: #ffffff;
+    border-radius: 12px;
+    padding: 14px 16px;
+    margin-bottom: 18px;
+    font-size: 16px;
+    font-weight: 800;
+    box-shadow: 0 0 20px rgba(239, 68, 68, 0.45);
+}
+
+.global-alert strong {
+    color: #fecaca;
+}
+
+.global-alert span {
+    display: block;
+    margin-top: 6px;
+    font-size: 13px;
+    color: #fee2e2;
+}
+
+.hidden {
+    display: none !important;
+}
+.filters-bar {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 18px;
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    border: 1px solid #334155;
+    background: #111827;
+    color: #cbd5e1;
+    border-radius: 999px;
+    padding: 8px 14px;
+    font-size: 13px;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.filter-btn:hover {
+    border-color: #2dce89;
+    color: #ffffff;
+}
+
+.filter-btn.active {
+    background: rgba(45, 206, 137, 0.18);
+    border-color: #2dce89;
+    color: #ffffff;
+}
+.search-bar {
+    margin-bottom: 18px;
+}
+
+.search-bar input {
+    width: 100%;
+    height: 42px;
+    box-sizing: border-box;
+
+    background: #111827;
+    color: #ffffff;
+
+    border: 1px solid #334155;
+    border-radius: 10px;
+
+    padding: 0 14px;
+
+    font-size: 14px;
+    font-weight: 700;
+    outline: none;
+}
+
+.search-bar input:focus {
+    border-color: #2dce89;
+    box-shadow: 0 0 0 3px rgba(45, 206, 137, 0.18);
+}
+
+.search-bar input::placeholder {
+    color: #64748b;
+}
+
+
+.hidden {
+    display: none !important;
+}

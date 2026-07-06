@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>SOA Tracking Overview</title>
+    <link rel="stylesheet" href="overview.css" />
+</head>
+<body>
+    <div class="page">
+        <header>
+            <div>
+                <h1>Samurai Operations Assistant</h1>
+                <p>All Tracking Overview</p>
+            </div>
+
+            <div class="header-actions">
+                <button id="refreshBtn">Refresh</button>
+                <button id="clearOldBtn">Clear Old Data</button>
+            </div>
+        </header>
+
+        <div id="globalAlert" class="global-alert hidden"></div>
+
+        <div class="filters-bar">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="critical">Critical Only</button>
+            <button class="filter-btn" data-filter="warning">Warning Only</button>
+            <button class="filter-btn" data-filter="healthy">Healthy Only</button>
+        </div>
+
+        <div class="search-bar">
+            <input
+                id="overviewSearchInput"
+                type="text"
+                placeholder="Search branch, order, captain, status..."
+            />
+        </div>
+
+        <section class="summary-grid">
+            <div class="summary-card">
+                <span>Branches</span>
+                <strong id="totalBranches">0</strong>
+            </div>
+
+            <div class="summary-card critical">
+                <span>Total Critical</span>
+                <strong id="totalCritical">0</strong>
+            </div>
+
+            <div class="summary-card warning">
+                <span>Total Warning</span>
+                <strong id="totalWarning">0</strong>
+            </div>
+
+            <div class="summary-card">
+                <span>Total Orders</span>
+                <strong id="totalOrders">0</strong>
+            </div>
+        </section>
+
+        <section id="branchesContainer" class="branches-container"></section>
+    </div>
+
+    <script src="overview.js"></script>
+</body>
+</html>

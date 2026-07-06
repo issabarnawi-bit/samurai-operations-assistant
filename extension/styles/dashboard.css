@@ -1,0 +1,500 @@
+#soa-dashboard {
+    position: fixed !important;
+    top: 90px !important;
+    left: 280px !important;
+    width: 260px !important;
+    background: rgba(17, 24, 39, 0.98) !important;
+    color: #ffffff !important;
+    border: 2px solid #2dce89 !important;
+    border-radius: 12px !important;
+    padding: 14px !important;
+    z-index: 2147483647 !important;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.65) !important;
+    font-family: Arial, sans-serif !important;
+    font-size: 13px !important;
+}
+
+.soa-title {
+    font-size: 14px;
+    font-weight: 800;
+    margin-bottom: 12px;
+    color: #2dce89;
+}
+
+.soa-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.soa-row span {
+    color: #d1d5db;
+}
+
+.soa-row strong {
+    color: #ffffff;
+    font-size: 15px;
+}
+
+.soa-status {
+    margin-top: 10px;
+    font-size: 12px;
+    color: #9ca3af;
+}
+
+.soa-mute-btn {
+    width: 100%;
+    margin-top: 10px;
+    padding: 7px;
+    border: 1px solid #2dce89;
+    border-radius: 8px;
+    background: rgba(45, 206, 137, 0.12);
+    color: #ffffff;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.soa-mute-btn:hover {
+    background: rgba(45, 206, 137, 0.25);
+}
+
+#soa-critical-panel {
+    position: fixed;
+    top: 360px;
+    right: 270px;
+    width: 250px;
+    max-height: 320px;
+    overflow-y: auto;
+    z-index: 2147483647;
+
+    background: rgba(127, 29, 29, 0.94);
+    color: #ffffff;
+    border: 2px solid #ff0000;
+    border-radius: 12px;
+    padding: 12px;
+
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+
+    box-shadow: 0 0 22px rgba(255, 0, 0, 0.75);
+}
+
+.soa-critical-panel-title {
+    font-size: 15px;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+.soa-critical-panel-card {
+    border-top: 1px solid rgba(255, 255, 255, 0.25);
+    padding: 7px 0;
+    line-height: 1.35;
+}
+
+.soa-critical-label {
+    background: #ff0000 !important;
+    color: white !important;
+    font-size: 11px !important;
+    font-weight: 900 !important;
+    text-align: center !important;
+    padding: 4px 6px !important;
+    margin-bottom: 5px !important;
+    border-radius: 4px !important;
+}
+
+.soa-warning-label {
+    background: #f59e0b !important;
+    color: #111827 !important;
+    font-size: 11px !important;
+    font-weight: 900 !important;
+    text-align: center !important;
+    padding: 4px 6px !important;
+    margin-bottom: 5px !important;
+    border-radius: 4px !important;
+}
+.soa-health-box {
+    margin-bottom: 12px;
+    padding: 10px;
+    border-radius: 10px;
+    background: rgba(31, 41, 55, 0.9);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    text-align: center;
+}
+
+.soa-health-label {
+    font-size: 11px;
+    color: #9ca3af;
+    margin-bottom: 4px;
+}
+
+.soa-health-score {
+    font-size: 28px;
+    font-weight: 900;
+    line-height: 1.1;
+}
+
+.soa-health-status {
+    margin-top: 3px;
+    font-size: 12px;
+    font-weight: 800;
+    color: #d1d5db;
+}
+
+.soa-health-healthy {
+    color: #2dce89;
+}
+
+.soa-health-good {
+    color: #84cc16;
+}
+
+.soa-health-warning {
+    color: #f59e0b;
+}
+
+.soa-health-critical {
+    color: #ef4444;
+}
+#soa-dashboard {
+    display: block !important;
+}
+.soa-dashboard-header {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    gap: 8px !important;
+    margin-bottom: 12px !important;
+}
+
+.soa-collapse-btn {
+    width: 28px !important;
+    height: 24px !important;
+    border: 1px solid #2dce89 !important;
+    border-radius: 6px !important;
+    background: rgba(45, 206, 137, 0.12) !important;
+    color: #ffffff !important;
+    font-weight: 900 !important;
+    cursor: pointer !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.soa-collapse-btn:hover {
+    background: rgba(45, 206, 137, 0.25) !important;
+}
+/* ================================
+   SOA Top Bar - Right Position
+================================ */
+
+/* ================================
+   SOA Dashboard - Right Map Area
+================================ */
+
+#soa-dashboard {
+    display: block !important;
+    position: fixed !important;
+
+    /* يمين الخريطة، قبل قائمة الطلبات */
+    top: 95px !important;
+    right: 270px !important;
+    left: auto !important;
+
+    width: 270px !important;
+
+    background: rgba(17, 24, 39, 0.98) !important;
+    color: #ffffff !important;
+
+    border: 2px solid #2dce89 !important;
+    border-radius: 12px !important;
+    padding: 14px !important;
+
+    z-index: 2147483646 !important;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.65) !important;
+
+    font-family: Arial, sans-serif !important;
+    font-size: 13px !important;
+}
+/* ================================
+   SOA Critical Panel - Right Map Area
+================================ */
+
+#soa-critical-panel {
+    position: fixed !important;
+
+    /* تحت الداشبورد مباشرة */
+    top: 190px !important;
+    right: 270px !important;
+    left: auto !important;
+
+    width: 270px !important;
+    max-height: 360px !important;
+    overflow-y: auto !important;
+
+    background: rgba(17, 24, 39, 0.98) !important;
+    color: #ffffff !important;
+
+    border: 2px solid #ff0000 !important;
+    border-radius: 12px !important;
+    padding: 12px !important;
+
+    z-index: 2147483646 !important;
+    box-shadow: 0 12px 30px rgba(255, 0, 0, 0.45) !important;
+
+    font-family: Arial, sans-serif !important;
+    font-size: 12px !important;
+}
+
+.soa-critical-panel-title {
+    font-size: 14px !important;
+    font-weight: 900 !important;
+    color: #ff4d4d !important;
+    margin-bottom: 10px !important;
+}
+
+.soa-critical-panel-card {
+    background: rgba(127, 29, 29, 0.55) !important;
+    border: 1px solid rgba(255, 77, 77, 0.8) !important;
+    border-radius: 8px !important;
+    padding: 8px !important;
+    margin-bottom: 8px !important;
+    color: #ffffff !important;
+}
+
+.soa-critical-panel-card div {
+    margin-bottom: 3px !important;
+}
+
+.soa-critical-panel-card strong {
+    color: #fecaca !important;
+}
+.soa-dashboard-header,
+.soa-critical-panel-title {
+    cursor: move !important;
+}
+.soa-critical-actions {
+    display: flex !important;
+    gap: 8px !important;
+    margin-top: 8px !important;
+}
+
+.soa-critical-actions button {
+    flex: 1 !important;
+    height: 26px !important;
+    border-radius: 6px !important;
+    border: 1px solid rgba(255, 255, 255, 0.35) !important;
+    background: rgba(255, 255, 255, 0.12) !important;
+    color: #ffffff !important;
+    font-size: 11px !important;
+    font-weight: 800 !important;
+    cursor: pointer !important;
+}
+
+.soa-critical-actions button:hover {
+    background: rgba(255, 255, 255, 0.22) !important;
+}
+
+.soa-critical-focus-btn {
+    border-color: #2dce89 !important;
+}
+
+.soa-critical-copy-btn {
+    border-color: #f59e0b !important;
+}
+.soa-critical-actions {
+    display: flex !important;
+    gap: 8px !important;
+    margin-top: 8px !important;
+}
+
+.soa-critical-actions button {
+    flex: 1 !important;
+    height: 28px !important;
+    border-radius: 6px !important;
+    background: rgba(255, 255, 255, 0.12) !important;
+    color: #ffffff !important;
+    font-size: 11px !important;
+    font-weight: 800 !important;
+    cursor: pointer !important;
+}
+
+.soa-critical-focus-btn {
+    border: 1px solid #2dce89 !important;
+}
+
+.soa-critical-copy-btn {
+    border: 1px solid #f59e0b !important;
+}
+
+.soa-critical-actions button:hover {
+    background: rgba(255, 255, 255, 0.22) !important;
+}
+
+.soa-critical-panel-title {
+    cursor: move !important;
+    font-size: 15px !important;
+    font-weight: 900 !important;
+    color: #ff4d4d !important;
+    margin-bottom: 10px !important;
+}
+
+.soa-critical-panel-card {
+    border-top: 1px solid rgba(255, 255, 255, 0.25) !important;
+    padding: 8px 0 !important;
+    line-height: 1.35 !important;
+}
+#soa-dashboard {
+    background: rgba(17, 24, 39, 0.40) !important;
+    backdrop-filter: blur(8px) !important;
+    border: 1px solid rgba(45, 206, 137, 0.85) !important;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.38) !important;
+}
+#soa-dashboard-toggle-btn {
+    position: fixed !important;
+    top: 95px !important;
+    right: 225px !important;
+
+    width: 54px !important;
+    height: 32px !important;
+
+    border-radius: 999px !important;
+    border: 1px solid #2dce89 !important;
+
+    background: rgba(17, 24, 39, 0.55) !important;
+    backdrop-filter: blur(8px) !important;
+
+    color: #2dce89 !important;
+    font-size: 12px !important;
+    font-weight: 900 !important;
+
+    z-index: 2147483647 !important;
+    cursor: pointer !important;
+
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.35) !important;
+}
+
+#soa-dashboard-toggle-btn:hover {
+    background: rgba(45, 206, 137, 0.18) !important;
+    color: #ffffff !important;
+}
+
+#soa-dashboard-toggle-btn.collapsed {
+    background: rgba(127, 29, 29, 0.55) !important;
+    border-color: #ef4444 !important;
+    color: #ffffff !important;
+}
+#soa-dashboard.soa-dashboard-hidden {
+    display: none !important;
+}
+
+#soa-dashboard {
+    background: rgba(17, 24, 39, 0.68) !important;
+    backdrop-filter: blur(8px) !important;
+    border: 1px solid rgba(45, 206, 137, 0.9) !important;
+}
+
+#soa-dashboard-toggle-btn {
+    position: fixed !important;
+
+    top: 48px !important;
+    left: 50% !important;
+    right: auto !important;
+    transform: translateX(-50%) !important;
+
+    width: 72px !important;
+    height: 34px !important;
+
+    border-radius: 999px !important;
+    border: 1px solid #2dce89 !important;
+
+    background: rgba(17, 24, 39, 0.78) !important;
+    backdrop-filter: blur(8px) !important;
+
+    color: #2dce89 !important;
+    font-size: 13px !important;
+    font-weight: 900 !important;
+
+    z-index: 2147483647 !important;
+    cursor: pointer !important;
+    pointer-events: auto !important;
+
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.45) !important;
+}
+
+#soa-dashboard-toggle-btn:hover {
+    background: rgba(45, 206, 137, 0.22) !important;
+    color: #ffffff !important;
+}
+
+#soa-dashboard-toggle-btn.collapsed {
+    background: rgba(127, 29, 29, 0.78) !important;
+    border-color: #ef4444 !important;
+    color: #ffffff !important;
+}
+
+#soa-dashboard-toggle-btn:hover {
+    background: rgba(45, 206, 137, 0.22) !important;
+    color: #ffffff !important;
+}
+
+#soa-dashboard-toggle-btn.collapsed {
+    background: rgba(127, 29, 29, 0.75) !important;
+    border-color: #ef4444 !important;
+    color: #ffffff !important;
+}
+
+/* ================================
+   SOA final clean overrides
+   - Top bar widget removed from CSS
+   - Dashboard toggle button centered
+================================ */
+
+#soa-dashboard.soa-dashboard-hidden {
+    display: none !important;
+}
+
+#soa-dashboard {
+    display: block !important;
+    position: fixed !important;
+    top: 95px !important;
+    left: 280px !important;
+    width: 270px !important;
+    background: rgba(17, 24, 39, 0.68) !important;
+    backdrop-filter: blur(8px) !important;
+    border: 1px solid rgba(45, 206, 137, 0.9) !important;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.38) !important;
+    z-index: 2147483646 !important;
+}
+
+#soa-dashboard-toggle-btn {
+    position: fixed !important;
+    top: 48px !important;
+    left: 50% !important;
+    right: auto !important;
+    transform: translateX(-50%) !important;
+    width: 72px !important;
+    height: 34px !important;
+    border-radius: 999px !important;
+    border: 1px solid #2dce89 !important;
+    background: rgba(17, 24, 39, 0.78) !important;
+    backdrop-filter: blur(8px) !important;
+    color: #2dce89 !important;
+    font-size: 13px !important;
+    font-weight: 900 !important;
+    z-index: 2147483647 !important;
+    cursor: pointer !important;
+    pointer-events: auto !important;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.45) !important;
+}
+
+#soa-dashboard-toggle-btn:hover {
+    background: rgba(45, 206, 137, 0.22) !important;
+    color: #ffffff !important;
+}
+
+#soa-dashboard-toggle-btn.collapsed {
+    background: rgba(127, 29, 29, 0.78) !important;
+    border-color: #ef4444 !important;
+    color: #ffffff !important;
+}

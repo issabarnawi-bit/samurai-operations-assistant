@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>SOA Settings</title>
+    <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+    <div class="popup-container">
+        <h1>Samurai Operations Assistant</h1>
+        <p class="version">v0.3.0 Settings</p>
+
+        <div class="field">
+            <label for="warningMinutes">Warning After Minutes</label>
+            <input id="warningMinutes" type="number" min="1" max="120" />
+        </div>
+
+        <div class="field">
+            <label for="criticalMinutes">Critical After Minutes</label>
+            <input id="criticalMinutes" type="number" min="1" max="180" />
+        </div>
+
+        <div class="field checkbox-field">
+            <label>
+                <input id="soundEnabled" type="checkbox" />
+                Sound Enabled
+            </label>
+        </div>
+
+        <div class="field checkbox-field">
+            <label>
+                <input id="criticalPanelEnabled" type="checkbox" />
+                Show Critical Panel
+            </label>
+        </div>
+
+        <button id="saveBtn">Save Settings</button>
+        <button id="openOverviewBtn" class="secondary-btn">
+    Open All Tracking Dashboard
+</button>
+
+        <div id="statusMessage"></div>
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+</html>
